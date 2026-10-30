@@ -1,5 +1,9 @@
 # Arnés B2B: captación y seguimiento (demo)
 
+Repositorio: https://github.com/valrami-hue/arnes-b2b-avril
+Demo en video: https://drive.google.com/file/d/18QAh-ysZTRn0IDpI0SyH6gPgJeBX3X0W/view?usp=sharing
+Autor: Valeria Ramírez Olvera
+
 Prototipo acotado y demostrable (no es un sistema de producción) para el ticket **C2 · Primer arnés B2B** de Avril Systems.
 Empresa ficticia: **LimpioMax Oficinas** (limpieza de oficinas y locales). Todos los datos son sintéticos.
 
@@ -8,8 +12,8 @@ Empresa ficticia: **LimpioMax Oficinas** (limpieza de oficinas y locales). Todos
 ## Instalación
 Requiere Python 3.9 o superior. Sin dependencias externas y sin llaves.
 ```
-git clone <liga-del-repo>
-cd arnes_b2b
+git clone https://github.com/valrami-hue/arnes-b2b-avril.git
+cd arnes-b2b-avril
 ```
 
 ## Ejecución
@@ -52,7 +56,7 @@ El modelo **propone** y el arnés **valida**:
 
 > **Estado de verificación:** el cliente `anthropic` se probó con una API simulada (mock) que verifica la forma de la petición, el conteo de tokens y el manejo de errores. **No se ejecutó contra la API real** porque el ticket prohíbe usar llaves reales sin permiso de Gerry/Sergio. Antes de usarlo, confirma el nombre del modelo disponible en tu cuenta.
 
-## Pruebas (20 automáticas, todas pasan)
+## Pruebas (21 automáticas, todas pasan)
 Casos incompletos: **S03** (faltan nombre, empresa, ubicación, metros y frecuencia), **S06** (sin contacto) y **S08** (mensaje vago, sin servicio).
 También: caso completo, fuera de alcance, duplicado, que ningún borrador contenga precios, que nada se envíe y, de la capa de modelo: JSON con cercas de código, respuesta inválida, valores fuera de catálogo, borrador con precio, intento de inyección de instrucciones, cliente caído y cliente real con API simulada.
 
