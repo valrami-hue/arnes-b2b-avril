@@ -1,0 +1,11 @@
+id,estado,categoria,servicio,nombre,empresa,contacto,ubicacion,metros,frecuencia,faltantes,urgente,pide_precio,modo,borrador_origen,enviado
+S01,listo_para_validar,servicio,limpieza_recurrente,Ana Torres,Corporativo Delta,ana.torres@delta.ejemplo.test,Pachuca,300,diaria,,False,True,modelo,modelo,False
+S02,listo_para_validar,servicio,limpieza_profunda,Luis Medina,Despacho Medina,555-0102,Tulancingo,80,unica,,False,False,modelo,modelo,False
+S03,faltan_datos,servicio,limpieza_recurrente,,,contacto@anonimo.ejemplo.test,,,,nombre;empresa;ubicacion;metros;frecuencia,False,False,modelo,modelo,False
+S04,faltan_datos,servicio,limpieza_post_obra,Sofía Ramírez,Constructora Horizonte,sofia@horizonte.ejemplo.test,Querétaro,1200,,frecuencia,True,False,modelo,modelo,False
+S05,fuera_de_alcance,fuera_de_alcance,,Pedro Gómez,,pedro.g@correo.ejemplo.test,,,,,False,False,modelo,modelo,False
+S06,faltan_datos,servicio,vidrios_fachadas,Marta,Café Aurora,,CDMX,40,mensual,contacto,False,False,modelo,modelo,False
+S07,duplicado,servicio,limpieza_recurrente,Ana Torres,Corporativo Delta,ana.torres@delta.ejemplo.test,,,diaria,,False,False,modelo,modelo,False
+S08,faltan_datos,sin_clasificar,,Juan Pérez,Talleres JP,juan@talleresjp.ejemplo.test,,,,servicio;ubicacion;metros;frecuencia,False,False,modelo,modelo,False
+S09,listo_para_validar,servicio,cuidado_pisos,Elena Cruz,Clínica Vida,elena@clinicavida.ejemplo.test,Tizayuca,500,mensual,,True,True,modelo,plantilla (fallback: el borrador menciona precios o promesas),False
+S10,listo_para_validar,servicio,limpieza_recurrente,Raúl Vega,Hotel Sierra,raul@hotelsierra.ejemplo.test,Pachuca,150,semanal,,False,False,reglas (fallback: la respuesta no contiene JSON),modelo,False

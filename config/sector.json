@@ -1,0 +1,40 @@
+{
+  "empresa_ficticia": "LimpioMax Oficinas",
+  "sector": "limpieza de oficinas y locales comerciales (empresa ficticia)",
+  "campos_obligatorios": ["nombre", "empresa", "contacto", "servicio", "ubicacion", "metros", "frecuencia"],
+  "servicios": {
+    "limpieza_recurrente": {
+      "nombre": "Limpieza de oficinas recurrente",
+      "palabras": ["oficina", "oficinas", "limpieza diaria", "limpieza semanal", "limpieza de mantenimiento"]
+    },
+    "limpieza_profunda": {
+      "nombre": "Limpieza profunda",
+      "palabras": ["limpieza profunda", "desinfeccion", "limpieza a fondo"]
+    },
+    "limpieza_post_obra": {
+      "nombre": "Limpieza post obra",
+      "palabras": ["post obra", "postobra", "despues de obra", "terminamos una obra", "fin de obra"]
+    },
+    "vidrios_fachadas": {
+      "nombre": "Limpieza de vidrios y fachadas",
+      "palabras": ["vidrios", "ventanas", "cristales", "fachada"]
+    },
+    "cuidado_pisos": {
+      "nombre": "Pulido y cuidado de pisos",
+      "palabras": ["pisos", "pulido", "abrillantado", "encerado"]
+    }
+  },
+  "fuera_de_alcance": ["jardineria", "plomeria", "pintura", "mudanza", "electricidad", "fumigacion"],
+  "ubicaciones_conocidas": ["Pachuca", "Tulancingo", "Tizayuca", "Querétaro", "CDMX", "Ciudad de México", "Mineral de la Reforma"],
+  "palabras_urgencia": ["urgente", "lo antes posible", "cuanto antes", "esta semana", "manana"],
+  "palabras_precio": ["precio", "cotiza", "cuanto cuesta", "costo", "tarifa", "presupuesto"],
+  "preguntas": {
+    "nombre": "¿Con quién tenemos el gusto de hablar (nombre de contacto)?",
+    "empresa": "¿Cuál es el nombre de su empresa o negocio?",
+    "contacto": "¿Nos comparte un correo o teléfono de contacto?",
+    "servicio": "¿Qué tipo de servicio necesita (limpieza recurrente, profunda, post obra, vidrios o pisos)?",
+    "ubicacion": "¿En qué ciudad o zona se ubica el inmueble?",
+    "metros": "¿Cuántos metros cuadrados aproximadamente tiene el espacio?",
+    "frecuencia": "¿Lo necesita una sola vez o de forma recurrente (diaria, semanal, quincenal o mensual)?"
+  }
+}

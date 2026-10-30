@@ -1,0 +1,23 @@
+[
+  {"id": "S01", "remitente": {"nombre": "Ana Torres", "empresa": "Corporativo Delta", "email": "ana.torres@delta.ejemplo.test", "telefono": ""},
+   "mensaje": "Hola, necesitamos limpieza diaria de nuestras oficinas en Pachuca, son unos 300 m2. ¿Cuánto cuesta?"},
+  {"id": "S02", "remitente": {"nombre": "Luis Medina", "empresa": "Despacho Medina", "email": "", "telefono": "555-0102"},
+   "mensaje": "Quiero una limpieza profunda de mi despacho en Tulancingo, 80 metros cuadrados, una sola vez."},
+  {"id": "S03", "remitente": {"nombre": "", "empresa": "", "email": "contacto@anonimo.ejemplo.test", "telefono": ""},
+   "mensaje": "Hola, me interesa limpieza para oficina."},
+  {"id": "S04", "remitente": {"nombre": "Sofía Ramírez", "empresa": "Constructora Horizonte", "email": "sofia@horizonte.ejemplo.test", "telefono": ""},
+   "mensaje": "Terminamos una obra en Querétaro y necesitamos limpieza post obra urgente, aproximadamente 1,200 m2."},
+  {"id": "S05", "remitente": {"nombre": "Pedro Gómez", "empresa": "", "email": "pedro.g@correo.ejemplo.test", "telefono": ""},
+   "mensaje": "Busco servicio de jardinería para mi casa, ¿lo manejan?"},
+  {"id": "S06", "remitente": {"nombre": "Marta", "empresa": "Café Aurora", "email": "", "telefono": ""},
+   "mensaje": "Quiero limpieza de vidrios de mi local en CDMX, 40 m2, cada mes."},
+  {"id": "S07", "remitente": {"nombre": "Ana Torres", "empresa": "Corporativo Delta", "email": "ana.torres@delta.ejemplo.test", "telefono": ""},
+   "mensaje": "Escribo de nuevo por la limpieza de oficinas diaria, ¿ya vieron mi solicitud?"},
+  {"id": "S08", "remitente": {"nombre": "Juan Pérez", "empresa": "Talleres JP", "email": "juan@talleresjp.ejemplo.test", "telefono": ""},
+   "mensaje": "Necesito ayuda con algo en mi negocio."},
+  {"id": "S09", "remitente": {"nombre": "Elena Cruz", "empresa": "Clínica Vida", "email": "elena@clinicavida.ejemplo.test", "telefono": "555-0109"},
+   "mensaje": "Quiero pulido y abrillantado de pisos en Tizayuca, 500 m2, cada mes. Mándenme cotización urgente."},
+  {"id": "S10", "remitente": {"nombre": "Raúl Vega", "empresa": "Hotel Sierra", "email": "raul@hotelsierra.ejemplo.test", "telefono": ""},
+   "mensaje": "Necesitamos limpieza de oficinas semanal en Pachuca, 150 m2, y también jardinería para el patio."}
+   
+]

@@ -1,0 +1,386 @@
+[
+  {
+    "id": "S01",
+    "mensaje_original": "Hola, necesitamos limpieza diaria de nuestras oficinas en Pachuca, son unos 300 m2. ¿Cuánto cuesta?",
+    "categoria": "servicio",
+    "estado": "listo_para_validar",
+    "datos": {
+      "nombre": "Ana Torres",
+      "empresa": "Corporativo Delta",
+      "contacto": "ana.torres@delta.ejemplo.test",
+      "email": "ana.torres@delta.ejemplo.test",
+      "telefono": null,
+      "servicio": "limpieza_recurrente",
+      "ubicacion": "Pachuca",
+      "metros": 300,
+      "frecuencia": "diaria"
+    },
+    "faltantes": [],
+    "preguntas": [],
+    "banderas": {
+      "urgente": false,
+      "pide_precio": true
+    },
+    "duplicado_de": null,
+    "notas": [],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "modelo",
+      "ubicacion": "modelo",
+      "metros": "modelo",
+      "frecuencia": "modelo"
+    },
+    "borrador_respuesta": "Hola Ana,\n\nGracias por contactar a LimpioMax Oficinas.\nRecibimos su solicitud de limpieza de oficinas recurrente.\nPor este medio no compartimos precios ni cotizaciones; un asesor le dará seguimiento.\nCon los datos que nos compartió, un asesor se pondrá en contacto para validar los detalles.",
+    "borrador_origen": "modelo",
+    "enviado": false
+  },
+  {
+    "id": "S02",
+    "mensaje_original": "Quiero una limpieza profunda de mi despacho en Tulancingo, 80 metros cuadrados, una sola vez.",
+    "categoria": "servicio",
+    "estado": "listo_para_validar",
+    "datos": {
+      "nombre": "Luis Medina",
+      "empresa": "Despacho Medina",
+      "contacto": "555-0102",
+      "email": null,
+      "telefono": "555-0102",
+      "servicio": "limpieza_profunda",
+      "ubicacion": "Tulancingo",
+      "metros": 80,
+      "frecuencia": "unica"
+    },
+    "faltantes": [],
+    "preguntas": [],
+    "banderas": {
+      "urgente": false,
+      "pide_precio": false
+    },
+    "duplicado_de": null,
+    "notas": [],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "modelo",
+      "ubicacion": "modelo",
+      "metros": "modelo",
+      "frecuencia": "modelo"
+    },
+    "borrador_respuesta": "Hola Luis,\n\nGracias por contactar a LimpioMax Oficinas.\nRecibimos su solicitud de limpieza profunda.\nCon los datos que nos compartió, un asesor se pondrá en contacto para validar los detalles.",
+    "borrador_origen": "modelo",
+    "enviado": false
+  },
+  {
+    "id": "S03",
+    "mensaje_original": "Hola, me interesa limpieza para oficina.",
+    "categoria": "servicio",
+    "estado": "faltan_datos",
+    "datos": {
+      "nombre": null,
+      "empresa": null,
+      "contacto": "contacto@anonimo.ejemplo.test",
+      "email": "contacto@anonimo.ejemplo.test",
+      "telefono": null,
+      "servicio": "limpieza_recurrente",
+      "ubicacion": null,
+      "metros": null,
+      "frecuencia": null
+    },
+    "faltantes": [
+      "nombre",
+      "empresa",
+      "ubicacion",
+      "metros",
+      "frecuencia"
+    ],
+    "preguntas": [
+      "¿Con quién tenemos el gusto de hablar (nombre de contacto)?",
+      "¿Cuál es el nombre de su empresa o negocio?",
+      "¿En qué ciudad o zona se ubica el inmueble?",
+      "¿Cuántos metros cuadrados aproximadamente tiene el espacio?",
+      "¿Lo necesita una sola vez o de forma recurrente (diaria, semanal, quincenal o mensual)?"
+    ],
+    "banderas": {
+      "urgente": false,
+      "pide_precio": false
+    },
+    "duplicado_de": null,
+    "notas": [],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "modelo",
+      "ubicacion": "reglas",
+      "metros": "reglas",
+      "frecuencia": "reglas"
+    },
+    "borrador_respuesta": "Hola,\n\nGracias por contactar a LimpioMax Oficinas.\nRecibimos su solicitud de limpieza de oficinas recurrente.\nPara dar el siguiente paso, ¿nos ayuda a confirmar lo siguiente?\n- ¿Con quién tenemos el gusto de hablar (nombre de contacto)?\n- ¿Cuál es el nombre de su empresa o negocio?\n- ¿En qué ciudad o zona se ubica el inmueble?\n- ¿Cuántos metros cuadrados aproximadamente tiene el espacio?\n- ¿Lo necesita una sola vez o de forma recurrente (diaria, semanal, quincenal o mensual)?",
+    "borrador_origen": "modelo",
+    "enviado": false
+  },
+  {
+    "id": "S04",
+    "mensaje_original": "Terminamos una obra en Querétaro y necesitamos limpieza post obra urgente, aproximadamente 1,200 m2.",
+    "categoria": "servicio",
+    "estado": "faltan_datos",
+    "datos": {
+      "nombre": "Sofía Ramírez",
+      "empresa": "Constructora Horizonte",
+      "contacto": "sofia@horizonte.ejemplo.test",
+      "email": "sofia@horizonte.ejemplo.test",
+      "telefono": null,
+      "servicio": "limpieza_post_obra",
+      "ubicacion": "Querétaro",
+      "metros": 1200,
+      "frecuencia": null
+    },
+    "faltantes": [
+      "frecuencia"
+    ],
+    "preguntas": [
+      "¿Lo necesita una sola vez o de forma recurrente (diaria, semanal, quincenal o mensual)?"
+    ],
+    "banderas": {
+      "urgente": true,
+      "pide_precio": false
+    },
+    "duplicado_de": null,
+    "notas": [],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "modelo",
+      "ubicacion": "modelo",
+      "metros": "modelo",
+      "frecuencia": "reglas"
+    },
+    "borrador_respuesta": "Hola Sofía,\n\nGracias por contactar a LimpioMax Oficinas.\nRecibimos su solicitud de limpieza post obra.\nEntendemos que es urgente y lo marcamos como prioritario para el asesor.\nPara dar el siguiente paso, ¿nos ayuda a confirmar lo siguiente?\n- ¿Lo necesita una sola vez o de forma recurrente (diaria, semanal, quincenal o mensual)?",
+    "borrador_origen": "modelo",
+    "enviado": false
+  },
+  {
+    "id": "S05",
+    "mensaje_original": "Busco servicio de jardinería para mi casa, ¿lo manejan?",
+    "categoria": "fuera_de_alcance",
+    "estado": "fuera_de_alcance",
+    "datos": {
+      "nombre": "Pedro Gómez",
+      "empresa": null,
+      "contacto": "pedro.g@correo.ejemplo.test",
+      "email": "pedro.g@correo.ejemplo.test",
+      "telefono": null,
+      "servicio": null,
+      "ubicacion": null,
+      "metros": null,
+      "frecuencia": null
+    },
+    "faltantes": [],
+    "preguntas": [],
+    "banderas": {
+      "urgente": false,
+      "pide_precio": false
+    },
+    "duplicado_de": null,
+    "notas": [
+      "Modelo: Pide jardinería para casa particular."
+    ],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "reglas",
+      "ubicacion": "reglas",
+      "metros": "reglas",
+      "frecuencia": "reglas"
+    },
+    "borrador_respuesta": "Hola Pedro,\n\nMuchas gracias por contactar a LimpioMax Oficinas. Por ahora solo atendemos servicios de limpieza de oficinas y locales comerciales, por lo que no podremos ayudarle con esta solicitud. Le agradecemos su interés.",
+    "borrador_origen": "modelo",
+    "enviado": false
+  },
+  {
+    "id": "S06",
+    "mensaje_original": "Quiero limpieza de vidrios de mi local en CDMX, 40 m2, cada mes.",
+    "categoria": "servicio",
+    "estado": "faltan_datos",
+    "datos": {
+      "nombre": "Marta",
+      "empresa": "Café Aurora",
+      "contacto": null,
+      "email": null,
+      "telefono": null,
+      "servicio": "vidrios_fachadas",
+      "ubicacion": "CDMX",
+      "metros": 40,
+      "frecuencia": "mensual"
+    },
+    "faltantes": [
+      "contacto"
+    ],
+    "preguntas": [
+      "¿Nos comparte un correo o teléfono de contacto?"
+    ],
+    "banderas": {
+      "urgente": false,
+      "pide_precio": false
+    },
+    "duplicado_de": null,
+    "notas": [],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "modelo",
+      "ubicacion": "modelo",
+      "metros": "modelo",
+      "frecuencia": "modelo"
+    },
+    "borrador_respuesta": "Hola Marta,\n\nGracias por contactar a LimpioMax Oficinas.\nRecibimos su solicitud de limpieza de vidrios y fachadas.\nPara dar el siguiente paso, ¿nos ayuda a confirmar lo siguiente?\n- ¿Nos comparte un correo o teléfono de contacto?",
+    "borrador_origen": "modelo",
+    "enviado": false
+  },
+  {
+    "id": "S07",
+    "mensaje_original": "Escribo de nuevo por la limpieza de oficinas diaria, ¿ya vieron mi solicitud?",
+    "categoria": "servicio",
+    "estado": "duplicado",
+    "datos": {
+      "nombre": "Ana Torres",
+      "empresa": "Corporativo Delta",
+      "contacto": "ana.torres@delta.ejemplo.test",
+      "email": "ana.torres@delta.ejemplo.test",
+      "telefono": null,
+      "servicio": "limpieza_recurrente",
+      "ubicacion": null,
+      "metros": null,
+      "frecuencia": "diaria"
+    },
+    "faltantes": [],
+    "preguntas": [],
+    "banderas": {
+      "urgente": false,
+      "pide_precio": false
+    },
+    "duplicado_de": "S01",
+    "notas": [],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "modelo",
+      "ubicacion": "reglas",
+      "metros": "reglas",
+      "frecuencia": "reglas"
+    },
+    "borrador_respuesta": "Hola Ana,\n\nGracias por escribirnos de nuevo. Su solicitud ya está registrada con el folio S01 y un asesor le dará seguimiento; no es necesario que la envíe otra vez.",
+    "borrador_origen": "modelo",
+    "enviado": false
+  },
+  {
+    "id": "S08",
+    "mensaje_original": "Necesito ayuda con algo en mi negocio.",
+    "categoria": "sin_clasificar",
+    "estado": "faltan_datos",
+    "datos": {
+      "nombre": "Juan Pérez",
+      "empresa": "Talleres JP",
+      "contacto": "juan@talleresjp.ejemplo.test",
+      "email": "juan@talleresjp.ejemplo.test",
+      "telefono": null,
+      "servicio": null,
+      "ubicacion": null,
+      "metros": null,
+      "frecuencia": null
+    },
+    "faltantes": [
+      "servicio",
+      "ubicacion",
+      "metros",
+      "frecuencia"
+    ],
+    "preguntas": [
+      "¿Qué tipo de servicio necesita (limpieza recurrente, profunda, post obra, vidrios o pisos)?",
+      "¿En qué ciudad o zona se ubica el inmueble?",
+      "¿Cuántos metros cuadrados aproximadamente tiene el espacio?",
+      "¿Lo necesita una sola vez o de forma recurrente (diaria, semanal, quincenal o mensual)?"
+    ],
+    "banderas": {
+      "urgente": false,
+      "pide_precio": false
+    },
+    "duplicado_de": null,
+    "notas": [],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "reglas",
+      "ubicacion": "reglas",
+      "metros": "reglas",
+      "frecuencia": "reglas"
+    },
+    "borrador_respuesta": "Hola Juan,\n\nGracias por contactar a LimpioMax Oficinas.\nPara dar el siguiente paso, ¿nos ayuda a confirmar lo siguiente?\n- ¿Qué tipo de servicio necesita (limpieza recurrente, profunda, post obra, vidrios o pisos)?\n- ¿En qué ciudad o zona se ubica el inmueble?\n- ¿Cuántos metros cuadrados aproximadamente tiene el espacio?\n- ¿Lo necesita una sola vez o de forma recurrente (diaria, semanal, quincenal o mensual)?",
+    "borrador_origen": "modelo",
+    "enviado": false
+  },
+  {
+    "id": "S09",
+    "mensaje_original": "Quiero pulido y abrillantado de pisos en Tizayuca, 500 m2, cada mes. Mándenme cotización urgente.",
+    "categoria": "servicio",
+    "estado": "listo_para_validar",
+    "datos": {
+      "nombre": "Elena Cruz",
+      "empresa": "Clínica Vida",
+      "contacto": "elena@clinicavida.ejemplo.test",
+      "email": "elena@clinicavida.ejemplo.test",
+      "telefono": "555-0109",
+      "servicio": "cuidado_pisos",
+      "ubicacion": "Tizayuca",
+      "metros": 500,
+      "frecuencia": "mensual"
+    },
+    "faltantes": [],
+    "preguntas": [],
+    "banderas": {
+      "urgente": true,
+      "pide_precio": true
+    },
+    "duplicado_de": null,
+    "notas": [],
+    "modo": "modelo",
+    "origen_campos": {
+      "servicio": "modelo",
+      "ubicacion": "modelo",
+      "metros": "modelo",
+      "frecuencia": "modelo"
+    },
+    "borrador_respuesta": "Hola Elena,\n\nGracias por escribir a LimpioMax Oficinas.\nRecibimos su solicitud de: pulido y cuidado de pisos.\nPor este medio no compartimos precios ni cotizaciones; un asesor le dará seguimiento una vez que confirmemos los detalles.\nNotamos que es urgente y lo marcamos como prioritario.\nTenemos la información necesaria; un asesor se pondrá en contacto para validar los detalles.",
+    "borrador_origen": "plantilla (fallback: el borrador menciona precios o promesas)",
+    "enviado": false
+  },
+  {
+    "id": "S10",
+    "mensaje_original": "Necesitamos limpieza de oficinas semanal en Pachuca, 150 m2, y también jardinería para el patio.",
+    "categoria": "servicio",
+    "estado": "listo_para_validar",
+    "datos": {
+      "nombre": "Raúl Vega",
+      "empresa": "Hotel Sierra",
+      "contacto": "raul@hotelsierra.ejemplo.test",
+      "email": "raul@hotelsierra.ejemplo.test",
+      "telefono": null,
+      "servicio": "limpieza_recurrente",
+      "ubicacion": "Pachuca",
+      "metros": 150,
+      "frecuencia": "semanal"
+    },
+    "faltantes": [],
+    "preguntas": [],
+    "banderas": {
+      "urgente": false,
+      "pide_precio": false
+    },
+    "duplicado_de": null,
+    "notas": [
+      "Parte de la solicitud (jardineria) está fuera de alcance."
+    ],
+    "modo": "reglas (fallback: la respuesta no contiene JSON)",
+    "origen_campos": {
+      "servicio": "reglas",
+      "ubicacion": "reglas",
+      "metros": "reglas",
+      "frecuencia": "reglas"
+    },
+    "borrador_respuesta": "Hola Raúl,\n\nGracias por contactar a LimpioMax Oficinas.\nRecibimos su solicitud de limpieza de oficinas recurrente.\nLe comentamos que por ahora solo atendemos servicios de limpieza.\nCon los datos que nos compartió, un asesor se pondrá en contacto para validar los detalles.",
+    "borrador_origen": "modelo",
+    "enviado": false
+  }
+]
