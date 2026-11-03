@@ -1,0 +1,5 @@
+# Arnés B2B (demo): NO tiene dependencias externas.
+# Usa solo la biblioteca estándar de Python (json, csv, re, urllib, unittest).
+# Este archivo existe para que la instalación sea explícita y reproducible:
+#   pip install -r requirements.txt
+# No agregues llaves ni credenciales aquí.
