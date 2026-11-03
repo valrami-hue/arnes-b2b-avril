@@ -10,11 +10,20 @@ Empresa ficticia: **LimpioMax Oficinas** (limpieza de oficinas y locales). Todos
 **Flujo:** solicitud → clasificación → datos faltantes → preguntas de seguimiento → borrador de respuesta (no se envía) → registro en CRM de prueba.
 
 ## Instalación
-Requiere Python 3.9 o superior. Sin dependencias externas y sin llaves.
-Python probado: Python 3.14.3 en Windows 
+
+Python probado: 3.14.3 en Windows (no se probó con versiones anteriores). Sin dependencias externas y sin llaves.
+
+```
 git clone https://github.com/valrami-hue/arnes-b2b-avril.git
 cd arnes-b2b-avril
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python run.py
+python -m unittest discover -s tests
 ```
+
+En Mac o Linux: `source .venv/bin/activate` en lugar de `.venv\Scripts\activate`, y `python3` en lugar de `python`.
 
 ## Ejecución
 ```
