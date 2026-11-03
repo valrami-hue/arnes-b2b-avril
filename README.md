@@ -11,7 +11,7 @@ Empresa ficticia: **LimpioMax Oficinas** (limpieza de oficinas y locales). Todos
 
 ## Instalación
 Requiere Python 3.9 o superior. Sin dependencias externas y sin llaves.
-```
+Python probado: Python 3.14.3 en Windows 
 git clone https://github.com/valrami-hue/arnes-b2b-avril.git
 cd arnes-b2b-avril
 ```
