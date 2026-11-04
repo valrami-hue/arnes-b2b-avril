@@ -39,8 +39,12 @@ def main():
     salida = a.salida or ("crm_modelo" if cliente else "crm")
 
     t0 = time.perf_counter()
-    cfg = pipeline.cargar_json(a.config)
-    leads = pipeline.procesar(pipeline.cargar_json(a.solicitudes), cfg, cliente)
+    try:
+        cfg = pipeline.cargar_json(a.config)
+        leads = pipeline.procesar(pipeline.cargar_json(a.solicitudes), cfg, cliente)
+    except (OSError, ValueError) as e:  # archivo inexistente, JSON inválido o solicitud mal formada
+        print("Error en los datos de entrada: %s" % e)
+        return 2
     crm.guardar(leads, salida)
     dt = time.perf_counter() - t0
 
