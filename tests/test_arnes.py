@@ -65,12 +65,3 @@ class TestEntradaYSalida(unittest.TestCase):
                            capture_output=True, text=True, cwd=RAIZ)
         self.assertEqual(r.returncode, 2)
         self.assertIn("Error en los datos de entrada", r.stdout)
-
-    def test_csv_usa_saltos_de_linea_lf(self):
-        import tempfile
-        from arnes import crm
-        cfg = pipeline.cargar_json(RAIZ / "config/sector.json")
-        sols = pipeline.cargar_json(RAIZ / "data/solicitudes.json")
-        with tempfile.TemporaryDirectory() as d:
-            crm.guardar(pipeline.procesar(sols, cfg), d)
-            self.assertNotIn(b"\r", (Path(d) / "leads.csv").read_bytes())

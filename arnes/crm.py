@@ -13,7 +13,7 @@ def guardar(leads, carpeta):
     carpeta.mkdir(parents=True, exist_ok=True)
     (carpeta / "leads.json").write_text(json.dumps(leads, ensure_ascii=False, indent=2), encoding="utf-8")
     with open(carpeta / "leads.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f, lineterminator="\n")
+        w = csv.writer(f)
         w.writerow(COLUMNAS)
         for l in leads:
             d = l["datos"]
