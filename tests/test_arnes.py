@@ -51,3 +51,26 @@ class TestArnes(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestEntradaYSalida(unittest.TestCase):
+    def test_solicitud_sin_mensaje_da_error_claro(self):
+        cfg = pipeline.cargar_json(RAIZ / "config/sector.json")
+        with self.assertRaisesRegex(ValueError, "no tiene 'mensaje'"):
+            pipeline.procesar([{"id": "X1"}], cfg)
+
+    def test_archivo_inexistente_sale_con_codigo_2(self):
+        import subprocess, sys
+        r = subprocess.run([sys.executable, str(RAIZ / "run.py"), "--solicitudes", "no_existe.json"],
+                           capture_output=True, text=True, cwd=RAIZ)
+        self.assertEqual(r.returncode, 2)
+        self.assertIn("Error en los datos de entrada", r.stdout)
+
+    def test_csv_usa_saltos_de_linea_lf(self):
+        import tempfile
+        from arnes import crm
+        cfg = pipeline.cargar_json(RAIZ / "config/sector.json")
+        sols = pipeline.cargar_json(RAIZ / "data/solicitudes.json")
+        with tempfile.TemporaryDirectory() as d:
+            crm.guardar(pipeline.procesar(sols, cfg), d)
+            self.assertNotIn(b"\r", (Path(d) / "leads.csv").read_bytes())

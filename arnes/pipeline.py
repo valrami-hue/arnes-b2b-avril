@@ -120,8 +120,20 @@ def borrador(lead, cfg):
     return "%s\n\n%s" % (saludo, "\n".join(partes))
 
 
+def validar_solicitudes(solicitudes):
+    """Falla con un mensaje claro si una solicitud no tiene 'id' o 'mensaje' (texto)."""
+    if not isinstance(solicitudes, list):
+        raise ValueError("El archivo de solicitudes debe contener una lista JSON")
+    for i, sol in enumerate(solicitudes):
+        if not isinstance(sol, dict) or "id" not in sol:
+            raise ValueError("La solicitud en la posición %d no tiene 'id'" % i)
+        if not isinstance(sol.get("mensaje"), str):
+            raise ValueError("La solicitud %s no tiene 'mensaje' (texto)" % sol["id"])
+
+
 def procesar(solicitudes, cfg, cliente=None):
     """Sin cliente: solo reglas. Con cliente (modelo): el modelo propone y las reglas respaldan."""
+    validar_solicitudes(solicitudes)
     leads, vistos = [], {}
     for sol in solicitudes:
         datos, categoria, banderas, notas = clasificar(sol, cfg)
