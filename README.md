@@ -30,7 +30,7 @@ En Mac o Linux: `source .venv/bin/activate` en lugar de `.venv\Scripts\activate`
 python3 run.py                                      # reglas (por defecto)
 python3 run.py --modo modelo                        # capa de modelo con cliente SIMULADO (sin llave)
 python3 run.py --modo modelo --cliente anthropic    # modelo real (solo con llave autorizada)
-python3 -m unittest discover -s tests -v            # 24 pruebas
+python3 -m unittest discover -s tests -v            # 23 pruebas
 ```
 En Windows puede ser `python` o `py` en lugar de `python3`.
 Opciones: `--config`, `--solicitudes`, `--salida`, `--respuestas`. Para otro sector basta editar `config/sector.json`.
